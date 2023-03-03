@@ -64,6 +64,12 @@
   src: url("../fonts/poppinsregular.ttf");
 }
 
+.customFlex {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 80px;
+}
+
 .slider-info {
   z-index: 999;
 }
@@ -238,7 +244,7 @@ body {
 }
 /* tabs end   */
 .serviceBox {
-  min-height: 290px;
+  min-height: 250px;
 }
 .serviceBox .service-content {
   /* -webkit-transition: all 0.25s ease;
@@ -275,7 +281,7 @@ body {
   left: 35%;
 }
 .serviceBox .service-content p {
-  margin: 0 0 65px !important;
+  margin: 0 0 0px !important;
 }
 
 .bluedash {
@@ -439,7 +445,7 @@ body {
     font-size: 15px;
   }
   .serviceBox .read {
-    left: 27%;
+    left: 34%;
   }
   .menu-top li a {
     font-size: 16px !important;
@@ -548,14 +554,17 @@ body {
   background-position: 79% 0% !important;
 }
 @media only screen and (max-width: 768px) {
+  .slider-info h3 {
+    font-size: 17px;
+  }
   .serviceBox {
     margin: 0px auto;
     margin-top: 55px;
     margin-bottom: 40px;
-    width: 290px;
+    width: 250px;
   }
   .serviceBox .read {
-    left: 33%;
+    left: 30%;
   }
   .slider-info h1 {
     font-size: 35px !important;
@@ -675,6 +684,9 @@ body {
   border-radius: 100px;
 }
 @media only screen and (max-width: 576px) {
+  .slider-info h3 {
+    font-size: 13px;
+  }
   .responsiveHeaders {
     font-size: 25px;
   }
@@ -748,9 +760,31 @@ body {
   .aboutusbg {
     background-position: 65% 30%;
   }
+  .eeostatement h2 {
+    font-size: 40px;
+  }
+  .eeostatement p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .careerstext {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 @media only screen and (max-width: 455px) {
+  .eeostatement h2 {
+    font-size: 24px;
+  }
+  .eeostatement p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .careerstext {
+    font-size: 13px;
+    line-height: 20px;
+  }
   .careerTitle {
     font-size: 30px;
     font-weight: 700;
