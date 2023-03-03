@@ -194,7 +194,7 @@
 .contactButton {
   font-size: 40px;
   font-weight: 900;
-  color: #086ad8;
+  color: #fff;
 }
 .careerTitle {
   color: #fff;
@@ -825,12 +825,16 @@ body {
   .aboutusbg {
     background-position: 65% 30%;
   }
+  .eeostatement {
+    max-width: 100%;
+  }
   .eeostatement h2 {
     font-size: 40px;
   }
   .eeostatement p {
     font-size: 16px;
     line-height: 23px;
+    max-width: 100%;
   }
   .careerstext {
     font-size: 16px;
