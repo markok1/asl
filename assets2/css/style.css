@@ -64,6 +64,9 @@
   src: url("../fonts/poppinsregular.ttf");
 }
 
+.slider-info {
+  z-index: 999;
+}
 .menu-top li a {
   font-size: 19px !important;
   font-weight: 900 !important;
