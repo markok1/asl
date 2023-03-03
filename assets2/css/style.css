@@ -63,7 +63,21 @@
   font-family: "poppinsregular";
   src: url("../fonts/poppinsregular.ttf");
 }
-
+.aboutUsBtn {
+  margin-bottom: 60px !important;
+}
+.boldAbout {
+  font-weight: 800;
+}
+.aboutUsSec h3 {
+  margin-bottom: 95px;
+}
+.aboutUsSecFix h4 {
+  margin-bottom: 30px;
+}
+.aboutUsSecFix h4:nth-child(2) {
+  margin-bottom: 100px;
+}
 .customFlex {
   display: flex;
   flex-wrap: wrap;
@@ -81,9 +95,11 @@
 .textSmallFIx2 {
   font-size: 20px;
   font-weight: 500;
+  padding-top: 160px;
 }
 .backgroundCream {
-  background-image: url(../images/bg/mitech-slider-cybersecurity-global-image.webp);
+  background-image: url(../images/bg/capabilitiesbg.jpg);
+  background-size: cover; /* Resize the background image to cover the entire container */
   background-repeat: no-repeat;
   background-position: 6% 64%;
   height: 900px;
@@ -111,12 +127,31 @@
 .aboutusbg {
   background-image: url("../images/bg/aboutUsBackground2.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
-  height: 833px; /* You must set a specified height */
+  height: 700px; /* You must set a specified height */
   background-position: 30% 30%; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   padding-bottom: 200px;
+  position: relative;
 }
+.aboutusbg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background-image: linear-gradient(to bottom right, #002f4b, #dc4225); */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  opacity: 0.6;
+}
+
 .heroText {
   font-size: 16px;
   letter-spacing: 3px;
@@ -441,6 +476,12 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+  .aboutUsSec h3 {
+    margin-bottom: 60px;
+  }
+  .aboutUsSecFix h4:nth-child(2) {
+    margin-bottom: 60px;
+  }
   .serviceBox .service-content h3 {
     font-size: 15px;
   }
@@ -554,6 +595,20 @@ body {
   background-position: 79% 0% !important;
 }
 @media only screen and (max-width: 768px) {
+  .aboutusbg {
+    height: 100%;
+    padding-bottom: 39px;
+  }
+  .boldAbout {
+    font-weight: 800;
+    font-size: 17px;
+  }
+  .aboutUsSecFix h4 {
+    font-size: 15px;
+  }
+  .textSmallFIx2 {
+    padding-top: 120px;
+  }
   .slider-info h3 {
     font-size: 17px;
   }
@@ -684,6 +739,16 @@ body {
   border-radius: 100px;
 }
 @media only screen and (max-width: 576px) {
+  .boldAbout {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .aboutUsSecFix h4 {
+    font-size: 14px;
+  }
+  .textSmallFIx2 {
+    padding-top: 60px;
+  }
   .slider-info h3 {
     font-size: 13px;
   }
@@ -771,9 +836,25 @@ body {
     font-size: 16px;
     line-height: 26px;
   }
+  .textSmallFIx2 {
+    padding-top: 0px;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 455px) {
+  .boldAbout {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .aboutUsSecFix h4 {
+    font-size: 12px;
+  }
+
+  .textSmallFIx2 {
+    padding-top: 0px;
+    font-size: 16px;
+  }
   .eeostatement h2 {
     font-size: 24px;
   }
@@ -874,7 +955,7 @@ body {
     font-size: 12px;
   }
   .aboutusbg {
-    height: 933px;
+    height: 100%;
   }
   .servicesText {
     font-size: 13px;
